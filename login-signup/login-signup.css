@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/login-signup/bakground.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+   
+
+.container{
+    background: linear-gradient(to right, #1b070a95, #12061ad3);
+    display: inline-block;
+    height: 600px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.container .heading{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+}
+
+.container{
+    padding: 50px;
+    overflow: hidden;
+}
+
+.container .area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .area .name{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container .area .name .fnm, .lnm, .email, .pass, .cpass{
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    margin: 0 0 4px 5px;
+}
+
+.container .area .name .first .fn, .ln{
+    margin-top: 4px;
+}
+
+.container .area .name .fn, .ln,.email-add .mail, .password, .cpassword{
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Belanosima', sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 10px;
+    width: 85%;
+    outline-color: whitesmoke;
+}
+
+.container .area .name .fn{
+    box-shadow: -5px 0px 10px red;
+}
+
+.container .area .name .ln{
+    box-shadow: 5px 0px 10px red;
+}
+
+.container .area .email-add .mail, .password, .cpassword{
+    box-shadow: 0px 0px 10px red;
+    width: 92.5%;
+}
+
+.container .area .email-add .email, .pass, .cpass{
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.container .area .button-area{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container .area .button-area button{
+    color: white;
+    font-size: 22px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    background: transparent;
+    border: whitesmoke solid 2px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+}
+
+.container .area .button-area button:hover{
+    box-shadow: 0 0 10px red;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.container a:visited{
+    text-decoration: none;
+}
+
+.switch{
+    display: none;
+}
+
+.toggle-switch{
+    position: relative;
+    display: inline-block;
+    margin-top: 12px;
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px red;
+    cursor: pointer;
+}
+
+.toggle-switch::after{
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + .toggle-switch:after{
+    left: 62px;
+    background-color: red;
+}
+
+input[type="checkbox"]:checked + .toggle-switch{
+    box-shadow: 0 0 10px whitesmoke;
+}

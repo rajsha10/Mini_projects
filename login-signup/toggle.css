@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch{
+    display: none;
+}
+
+.toggle{
+    position: relative;
+    display: inline-block;
+    background-color: red;
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transform: scale(2);
+}
+
+.toggle::after{
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    top: 2.5px;
+    left: 2px;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + .toggle:after{
+    translate: 31px 0;
+}
+
+input[type="checkbox"]:checked + .toggle{
+    background-color: royalblue;
+}
